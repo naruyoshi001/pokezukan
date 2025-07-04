@@ -8,7 +8,7 @@
   <h1>ポケモン図鑑</h1>
   <ul>
     {% for p in pokemons %}
-      <li>{{ p.id }}: {{ p.name }} [{{ p.type|join(', ') }}]</li>
+      <li>{{ p.id }}: {{ p.name }} [{{ p.type }}]</li>
     {% endfor %}
   </ul>
 </body>

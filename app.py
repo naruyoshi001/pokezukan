@@ -1,12 +1,18 @@
 from flask import Flask, render_template
-import json
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pokedex.db'
+db = SQLAlchemy(app)
+
+class Pokemon(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(20), nullable=False)
+    type = db.Column(db.String(20), nullable=False)
 
 @app.route("/")
 def index():
-    with open("data/pokedex.json", encoding="utf-8") as f:
-        pokemons = json.load(f)
+    pokemons = Pokemon.query.all()
     return render_template("index.html", pokemons=pokemons)
 
 if __name__ == "__main__":
