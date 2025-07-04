@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ポケモン図鑑</title>
+</head>
+<body>
+  <h1>ポケモン図鑑</h1>
+  <ul>
+    {% for p in pokemons %}
+      <li>{{ p.id }}: {{ p.name }} [{{ p.type|join(', ') }}]</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
