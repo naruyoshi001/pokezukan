@@ -10,6 +10,14 @@ class Pokemon(db.Model):
     name = db.Column(db.String(20), nullable=False)
     type1 = db.Column(db.String(10), nullable=False)
     type2 = db.Column(db.String(10))
+    hp = db.Column(db.Integer)
+    atk = db.Column(db.Integer)
+    def_ = db.Column("def", db.Integer)
+    sp_atk = db.Column(db.Integer)
+    sp_def = db.Column(db.Integer)
+    spd = db.Column(db.Integer)
+    ability1 = db.Column(db.String(40))
+    ability2 = db.Column(db.String(40))
 
 @app.route("/")
 def index():

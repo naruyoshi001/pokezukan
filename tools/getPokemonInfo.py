@@ -1,3 +1,4 @@
+DETAIL_TEMPLATE = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,3 +23,13 @@
   <a href="{{ url_for('index') }}">一覧に戻る</a>
 </body>
 </html>
+"""
+
+def main():
+    # ...（略）...
+    output_detail = "detail_template.txt"
+    with open(output_detail, "w", encoding="utf-8") as f:
+        f.write(DETAIL_TEMPLATE.strip())
+    print(f"detail.html用テンプレートを {output_detail} に出力しました")
+
+    # ...（あとの処理はそのまま）...

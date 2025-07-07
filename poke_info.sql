@@ -1,0 +1,168 @@
+-- DROP & CREATE table
+DROP TABLE IF EXISTS pokemon;
+CREATE TABLE pokemon (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  type1 TEXT,
+  type2 TEXT,
+  hp INTEGER,
+  atk INTEGER,
+  def INTEGER,
+  sp_atk INTEGER,
+  sp_def INTEGER,
+  spd INTEGER,
+  ability1 TEXT,
+  ability2 TEXT
+);
+
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (1, 'フシギダネ', 'grass', 'poison', 45, 49, 49, 65, 65, 45, 'overgrow', 'chlorophyll');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (2, 'フシギソウ', 'grass', 'poison', 60, 62, 63, 80, 80, 60, 'overgrow', 'chlorophyll');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (3, 'フシギバナ', 'grass', 'poison', 80, 82, 83, 100, 100, 80, 'overgrow', 'chlorophyll');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (4, 'ヒトカゲ', 'fire', '', 39, 52, 43, 60, 50, 65, 'blaze', 'solar-power');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (5, 'リザード', 'fire', '', 58, 64, 58, 80, 65, 80, 'blaze', 'solar-power');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (6, 'リザードン', 'fire', 'flying', 78, 84, 78, 109, 85, 100, 'blaze', 'solar-power');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (7, 'ゼニガメ', 'water', '', 44, 48, 65, 50, 64, 43, 'torrent', 'rain-dish');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (8, 'カメール', 'water', '', 59, 63, 80, 65, 80, 58, 'torrent', 'rain-dish');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (9, 'カメックス', 'water', '', 79, 83, 100, 85, 105, 78, 'torrent', 'rain-dish');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (10, 'キャタピー', 'bug', '', 45, 30, 35, 20, 20, 45, 'shield-dust', 'run-away');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (11, 'トランセル', 'bug', '', 50, 20, 55, 25, 25, 30, 'shed-skin', '');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (12, 'バタフリー', 'bug', 'flying', 60, 45, 50, 90, 80, 70, 'compound-eyes', 'tinted-lens');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (13, 'ビードル', 'bug', 'poison', 40, 35, 30, 20, 20, 50, 'shield-dust', 'run-away');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (14, 'コクーン', 'bug', 'poison', 45, 25, 50, 25, 25, 35, 'shed-skin', '');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (15, 'スピアー', 'bug', 'poison', 65, 90, 40, 45, 80, 75, 'swarm', 'sniper');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (16, 'ポッポ', 'normal', 'flying', 40, 45, 40, 35, 35, 56, 'keen-eye', 'tangled-feet');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (17, 'ピジョン', 'normal', 'flying', 63, 60, 55, 50, 50, 71, 'keen-eye', 'tangled-feet');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (18, 'ピジョット', 'normal', 'flying', 83, 80, 75, 70, 70, 101, 'keen-eye', 'tangled-feet');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (19, 'コラッタ', 'normal', '', 30, 56, 35, 25, 35, 72, 'run-away', 'guts');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (20, 'ラッタ', 'normal', '', 55, 81, 60, 50, 70, 97, 'run-away', 'guts');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (21, 'オニスズメ', 'normal', 'flying', 40, 60, 30, 31, 31, 70, 'keen-eye', 'sniper');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (22, 'オニドリル', 'normal', 'flying', 65, 90, 65, 61, 61, 100, 'keen-eye', 'sniper');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (23, 'アーボ', 'poison', '', 35, 60, 44, 40, 54, 55, 'intimidate', 'shed-skin');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (24, 'アーボック', 'poison', '', 60, 95, 69, 65, 79, 80, 'intimidate', 'shed-skin');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (25, 'ピカチュウ', 'electric', '', 35, 55, 40, 50, 50, 90, 'static', 'lightning-rod');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (26, 'ライチュウ', 'electric', '', 60, 90, 55, 90, 80, 110, 'static', 'lightning-rod');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (27, 'サンド', 'ground', '', 50, 75, 85, 20, 30, 40, 'sand-veil', 'sand-rush');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (28, 'サンドパン', 'ground', '', 75, 100, 110, 45, 55, 65, 'sand-veil', 'sand-rush');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (29, 'ニドラン♀', 'poison', '', 55, 47, 52, 40, 40, 41, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (30, 'ニドリーナ', 'poison', '', 70, 62, 67, 55, 55, 56, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (31, 'ニドクイン', 'poison', 'ground', 90, 92, 87, 75, 85, 76, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (32, 'ニドラン♂', 'poison', '', 46, 57, 40, 40, 40, 50, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (33, 'ニドリーノ', 'poison', '', 61, 72, 57, 55, 55, 65, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (34, 'ニドキング', 'poison', 'ground', 81, 102, 77, 85, 75, 85, 'poison-point', 'rivalry');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (35, 'ピッピ', 'fairy', '', 70, 45, 48, 60, 65, 35, 'cute-charm', 'magic-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (36, 'ピクシー', 'fairy', '', 95, 70, 73, 95, 90, 60, 'cute-charm', 'magic-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (37, 'ロコン', 'fire', '', 38, 41, 40, 50, 65, 65, 'flash-fire', 'drought');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (38, 'キュウコン', 'fire', '', 73, 76, 75, 81, 100, 100, 'flash-fire', 'drought');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (39, 'プリン', 'normal', 'fairy', 115, 45, 20, 45, 25, 20, 'cute-charm', 'competitive');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (40, 'プクリン', 'normal', 'fairy', 140, 70, 45, 85, 50, 45, 'cute-charm', 'competitive');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (41, 'ズバット', 'poison', 'flying', 40, 45, 35, 30, 40, 55, 'inner-focus', 'infiltrator');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (42, 'ゴルバット', 'poison', 'flying', 75, 80, 70, 65, 75, 90, 'inner-focus', 'infiltrator');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (43, 'ナゾノクサ', 'grass', 'poison', 45, 50, 55, 75, 65, 30, 'chlorophyll', 'run-away');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (44, 'クサイハナ', 'grass', 'poison', 60, 65, 70, 85, 75, 40, 'chlorophyll', 'stench');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (45, 'ラフレシア', 'grass', 'poison', 75, 80, 85, 110, 90, 50, 'chlorophyll', 'effect-spore');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (46, 'パラス', 'bug', 'grass', 35, 70, 55, 45, 55, 25, 'effect-spore', 'dry-skin');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (47, 'パラセクト', 'bug', 'grass', 60, 95, 80, 60, 80, 30, 'effect-spore', 'dry-skin');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (48, 'コンパン', 'bug', 'poison', 60, 55, 50, 40, 55, 45, 'compound-eyes', 'tinted-lens');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (49, 'モルフォン', 'bug', 'poison', 70, 65, 60, 90, 75, 90, 'shield-dust', 'tinted-lens');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (50, 'ディグダ', 'ground', '', 10, 55, 25, 35, 45, 95, 'sand-veil', 'arena-trap');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (51, 'ダグトリオ', 'ground', '', 35, 100, 50, 50, 70, 120, 'sand-veil', 'arena-trap');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (52, 'ニャース', 'normal', '', 40, 45, 35, 40, 40, 90, 'pickup', 'technician');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (53, 'ペルシアン', 'normal', '', 65, 70, 60, 65, 65, 115, 'limber', 'technician');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (54, 'コダック', 'water', '', 50, 52, 48, 65, 50, 55, 'damp', 'cloud-nine');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (55, 'ゴルダック', 'water', '', 80, 82, 78, 95, 80, 85, 'damp', 'cloud-nine');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (56, 'マンキー', 'fighting', '', 40, 80, 35, 35, 45, 70, 'vital-spirit', 'anger-point');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (57, 'オコリザル', 'fighting', '', 65, 105, 60, 60, 70, 95, 'vital-spirit', 'anger-point');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (58, 'ガーディ', 'fire', '', 55, 70, 45, 70, 50, 60, 'intimidate', 'flash-fire');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (59, 'ウインディ', 'fire', '', 90, 110, 80, 100, 80, 95, 'intimidate', 'flash-fire');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (60, 'ニョロモ', 'water', '', 40, 50, 40, 40, 40, 90, 'water-absorb', 'damp');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (61, 'ニョロゾ', 'water', '', 65, 65, 65, 50, 50, 90, 'water-absorb', 'damp');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (62, 'ニョロボン', 'water', 'fighting', 90, 95, 95, 70, 90, 70, 'water-absorb', 'damp');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (63, 'ケーシィ', 'psychic', '', 25, 20, 15, 105, 55, 90, 'synchronize', 'inner-focus');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (64, 'ユンゲラー', 'psychic', '', 40, 35, 30, 120, 70, 105, 'synchronize', 'inner-focus');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (65, 'フーディン', 'psychic', '', 55, 50, 45, 135, 95, 120, 'synchronize', 'inner-focus');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (66, 'ワンリキー', 'fighting', '', 70, 80, 50, 35, 35, 35, 'guts', 'no-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (67, 'ゴーリキー', 'fighting', '', 80, 100, 70, 50, 60, 45, 'guts', 'no-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (68, 'カイリキー', 'fighting', '', 90, 130, 80, 65, 85, 55, 'guts', 'no-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (69, 'マダツボミ', 'grass', 'poison', 50, 75, 35, 70, 30, 40, 'chlorophyll', 'gluttony');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (70, 'ウツドン', 'grass', 'poison', 65, 90, 50, 85, 45, 55, 'chlorophyll', 'gluttony');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (71, 'ウツボット', 'grass', 'poison', 80, 105, 65, 100, 70, 70, 'chlorophyll', 'gluttony');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (72, 'メノクラゲ', 'water', 'poison', 40, 40, 35, 50, 100, 70, 'clear-body', 'liquid-ooze');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (73, 'ドククラゲ', 'water', 'poison', 80, 70, 65, 80, 120, 100, 'clear-body', 'liquid-ooze');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (74, 'イシツブテ', 'rock', 'ground', 40, 80, 100, 30, 30, 20, 'rock-head', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (75, 'ゴローン', 'rock', 'ground', 55, 95, 115, 45, 45, 35, 'rock-head', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (76, 'ゴローニャ', 'rock', 'ground', 80, 120, 130, 55, 65, 45, 'rock-head', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (77, 'ポニータ', 'fire', '', 50, 85, 55, 65, 65, 90, 'run-away', 'flash-fire');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (78, 'ギャロップ', 'fire', '', 65, 100, 70, 80, 80, 105, 'run-away', 'flash-fire');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (79, 'ヤドン', 'water', 'psychic', 90, 65, 65, 40, 40, 15, 'oblivious', 'own-tempo');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (80, 'ヤドラン', 'water', 'psychic', 95, 75, 110, 100, 80, 30, 'oblivious', 'own-tempo');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (81, 'コイル', 'electric', 'steel', 25, 35, 70, 95, 55, 45, 'magnet-pull', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (82, 'レアコイル', 'electric', 'steel', 50, 60, 95, 120, 70, 70, 'magnet-pull', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (83, 'カモネギ', 'normal', 'flying', 52, 90, 55, 58, 62, 60, 'keen-eye', 'inner-focus');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (84, 'ドードー', 'normal', 'flying', 35, 85, 45, 35, 35, 75, 'run-away', 'early-bird');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (85, 'ドードリオ', 'normal', 'flying', 60, 110, 70, 60, 60, 110, 'run-away', 'early-bird');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (86, 'パウワウ', 'water', '', 65, 45, 55, 45, 70, 45, 'thick-fat', 'hydration');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (87, 'ジュゴン', 'water', 'ice', 90, 70, 80, 70, 95, 70, 'thick-fat', 'hydration');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (88, 'ベトベター', 'poison', '', 80, 80, 50, 40, 50, 25, 'stench', 'sticky-hold');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (89, 'ベトベトン', 'poison', '', 105, 105, 75, 65, 100, 50, 'stench', 'sticky-hold');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (90, 'シェルダー', 'water', '', 30, 65, 100, 45, 25, 40, 'shell-armor', 'skill-link');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (91, 'パルシェン', 'water', 'ice', 50, 95, 180, 85, 45, 70, 'shell-armor', 'skill-link');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (92, 'ゴース', 'ghost', 'poison', 30, 35, 30, 100, 35, 80, 'levitate', '');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (93, 'ゴースト', 'ghost', 'poison', 45, 50, 45, 115, 55, 95, 'levitate', '');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (94, 'ゲンガー', 'ghost', 'poison', 60, 65, 60, 130, 75, 110, 'cursed-body', '');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (95, 'イワーク', 'rock', 'ground', 35, 45, 160, 30, 45, 70, 'rock-head', 'sturdy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (96, 'スリープ', 'psychic', '', 60, 48, 45, 43, 90, 42, 'insomnia', 'forewarn');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (97, 'スリーパー', 'psychic', '', 85, 73, 70, 73, 115, 67, 'insomnia', 'forewarn');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (98, 'クラブ', 'water', '', 30, 105, 90, 25, 25, 50, 'hyper-cutter', 'shell-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (99, 'キングラー', 'water', '', 55, 130, 115, 50, 50, 75, 'hyper-cutter', 'shell-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (100, 'ビリリダマ', 'electric', '', 40, 30, 50, 55, 55, 100, 'soundproof', 'static');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (101, 'マルマイン', 'electric', '', 60, 50, 70, 80, 80, 150, 'soundproof', 'static');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (102, 'タマタマ', 'grass', 'psychic', 60, 40, 80, 60, 45, 40, 'chlorophyll', 'harvest');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (103, 'ナッシー', 'grass', 'psychic', 95, 95, 85, 125, 75, 55, 'chlorophyll', 'harvest');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (104, 'カラカラ', 'ground', '', 50, 50, 95, 40, 50, 35, 'rock-head', 'lightning-rod');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (105, 'ガラガラ', 'ground', '', 60, 80, 110, 50, 80, 45, 'rock-head', 'lightning-rod');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (106, 'サワムラー', 'fighting', '', 50, 120, 53, 35, 110, 87, 'limber', 'reckless');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (107, 'エビワラー', 'fighting', '', 50, 105, 79, 35, 110, 76, 'keen-eye', 'iron-fist');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (108, 'ベロリンガ', 'normal', '', 90, 55, 75, 60, 75, 30, 'own-tempo', 'oblivious');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (109, 'ドガース', 'poison', '', 40, 65, 95, 60, 45, 35, 'levitate', 'neutralizing-gas');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (110, 'マタドガス', 'poison', '', 65, 90, 120, 85, 70, 60, 'levitate', 'neutralizing-gas');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (111, 'サイホーン', 'ground', 'rock', 80, 85, 95, 30, 30, 25, 'lightning-rod', 'rock-head');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (112, 'サイドン', 'ground', 'rock', 105, 130, 120, 45, 45, 40, 'lightning-rod', 'rock-head');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (113, 'ラッキー', 'normal', '', 250, 5, 5, 35, 105, 50, 'natural-cure', 'serene-grace');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (114, 'モンジャラ', 'grass', '', 65, 55, 115, 100, 40, 60, 'chlorophyll', 'leaf-guard');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (115, 'ガルーラ', 'normal', '', 105, 95, 80, 40, 80, 90, 'early-bird', 'scrappy');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (116, 'タッツー', 'water', '', 30, 40, 70, 70, 25, 60, 'swift-swim', 'sniper');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (117, 'シードラ', 'water', '', 55, 65, 95, 95, 45, 85, 'poison-point', 'sniper');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (118, 'トサキント', 'water', '', 45, 67, 60, 35, 50, 63, 'swift-swim', 'water-veil');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (119, 'アズマオウ', 'water', '', 80, 92, 65, 65, 80, 68, 'swift-swim', 'water-veil');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (120, 'ヒトデマン', 'water', '', 30, 45, 55, 70, 55, 85, 'illuminate', 'natural-cure');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (121, 'スターミー', 'water', 'psychic', 60, 75, 85, 100, 85, 115, 'illuminate', 'natural-cure');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (122, 'バリヤード', 'psychic', 'fairy', 40, 45, 65, 100, 120, 90, 'soundproof', 'filter');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (123, 'ストライク', 'bug', 'flying', 70, 110, 80, 55, 80, 105, 'swarm', 'technician');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (124, 'ルージュラ', 'ice', 'psychic', 65, 50, 35, 115, 95, 95, 'oblivious', 'forewarn');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (125, 'エレブー', 'electric', '', 65, 83, 57, 95, 85, 105, 'static', 'vital-spirit');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (126, 'ブーバー', 'fire', '', 65, 95, 57, 100, 85, 93, 'flame-body', 'vital-spirit');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (127, 'カイロス', 'bug', '', 65, 125, 100, 55, 70, 85, 'hyper-cutter', 'mold-breaker');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (128, 'ケンタロス', 'normal', '', 75, 100, 95, 40, 70, 110, 'intimidate', 'anger-point');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (129, 'コイキング', 'water', '', 20, 10, 55, 15, 20, 80, 'swift-swim', 'rattled');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (130, 'ギャラドス', 'water', 'flying', 95, 125, 79, 60, 100, 81, 'intimidate', 'moxie');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (131, 'ラプラス', 'water', 'ice', 130, 85, 80, 85, 95, 60, 'water-absorb', 'shell-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (132, 'メタモン', 'normal', '', 48, 48, 48, 48, 48, 48, 'limber', 'imposter');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (133, 'イーブイ', 'normal', '', 55, 55, 50, 45, 65, 55, 'run-away', 'adaptability');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (134, 'シャワーズ', 'water', '', 130, 65, 60, 110, 95, 65, 'water-absorb', 'hydration');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (135, 'サンダース', 'electric', '', 65, 65, 60, 110, 95, 130, 'volt-absorb', 'quick-feet');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (136, 'ブースター', 'fire', '', 65, 130, 60, 95, 110, 65, 'flash-fire', 'guts');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (137, 'ポリゴン', 'normal', '', 65, 60, 70, 85, 75, 40, 'trace', 'download');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (138, 'オムナイト', 'rock', 'water', 35, 40, 100, 90, 55, 35, 'swift-swim', 'shell-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (139, 'オムスター', 'rock', 'water', 70, 60, 125, 115, 70, 55, 'swift-swim', 'shell-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (140, 'カブト', 'rock', 'water', 30, 80, 90, 55, 45, 55, 'swift-swim', 'battle-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (141, 'カブトプス', 'rock', 'water', 60, 115, 105, 65, 70, 80, 'swift-swim', 'battle-armor');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (142, 'プテラ', 'rock', 'flying', 80, 105, 65, 60, 75, 130, 'rock-head', 'pressure');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (143, 'カビゴン', 'normal', '', 160, 110, 65, 65, 110, 30, 'immunity', 'thick-fat');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (144, 'フリーザー', 'ice', 'flying', 90, 85, 100, 95, 125, 85, 'pressure', 'snow-cloak');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (145, 'サンダー', 'electric', 'flying', 90, 90, 85, 125, 90, 100, 'pressure', 'static');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (146, 'ファイヤー', 'fire', 'flying', 90, 100, 90, 125, 85, 90, 'pressure', 'flame-body');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (147, 'ミニリュウ', 'dragon', '', 41, 64, 45, 50, 50, 50, 'shed-skin', 'marvel-scale');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (148, 'ハクリュー', 'dragon', '', 61, 84, 65, 70, 70, 70, 'shed-skin', 'marvel-scale');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (149, 'カイリュー', 'dragon', 'flying', 91, 134, 95, 100, 100, 80, 'inner-focus', 'multiscale');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (150, 'ミュウツー', 'psychic', '', 106, 110, 90, 154, 90, 130, 'pressure', 'unnerve');
+INSERT INTO pokemon (id, name, type1, type2, hp, atk, def, sp_atk, sp_def, spd, ability1, ability2) VALUES (151, 'ミュウ', 'psychic', '', 100, 100, 100, 100, 100, 100, 'synchronize', '');
