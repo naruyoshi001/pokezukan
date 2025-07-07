@@ -3,13 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>ポケモン図鑑</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>ポケモン図鑑</h1>
-  <ul>
-    {% for p in pokemons %}
-      <li>{{ p.id }}: {{ p.name }} [{{ p.type }}]</li>
-    {% endfor %}
-  </ul>
+  <div class="header">ポケモン図鑑</div>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>名前</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in pokemons %}
+        <tr>
+          <td>{{ p.id }}</td>
+          <td>
+            <a href="{{ url_for('detail', pokemon_id=p.id) }}">{{ p.name }}</a>
+          </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+  </div>
 </body>
 </html>

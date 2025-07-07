@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ pokemon.name }}の詳細</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>{{ pokemon.name }}（No.{{ pokemon.id }}）</h1>
+  <ul>
+    <li>タイプ1：{{ pokemon.type1 }}</li>
+    <li>タイプ2：{{ pokemon.type2 or 'なし' }}</li>
+  </ul>
+  <a href="{{ url_for('index') }}">一覧に戻る</a>
+</body>
+</html>
